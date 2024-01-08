@@ -1,0 +1,25 @@
+[project]
+name = "${GITHUB_REPOSITORY_NAME}"
+version = "0.1.0"
+description = "${GITHUB_REPOSITORY_DESC}"
+authors = [
+  { name = "${GITHUB_ACTOR_NAME}", email = "${GITHUB_ACTOR_ID}+${GITHUB_ACTOR}@users.noreply.github.com" },
+]
+requires-python = ">=3.11"
+license = { text = "GPL-3.0-or-later" }
+
+[build-system]
+requires = ["pdm-pep517>=1.0.0"]
+build-backend = "pdm.pep517.api"
+
+[tool]
+[tool.pdm]
+[tool.pdm.dev-dependencies]
+dev = ["pytest>=7.4.3"]
+
+[tool.pdm.scripts]
+_.env_file = "env/.env"
+clean = { shell = "bash .pdm/scripts/clean.sh", help = "Remove all build, test, coverage, and Python artifacts" }
+
+[tool.pyright]
+venvPath = ".venv"
