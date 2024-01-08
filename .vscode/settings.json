@@ -1,5 +1,5 @@
 {
-  "editor.defaultFormatter": "trunk.io",
+  "editor.defaultFormatter": null,
   "editor.formatOnSave": true,
   "editor.inlineSuggest.enabled": true,
   "editor.renderControlCharacters": true,
@@ -35,7 +35,7 @@
   "python.testing.pytestEnabled": true,
   "python.analysis.typeCheckingMode": "basic",
   "python.createEnvironment.trigger": "off",
-  "python.terminal.activateEnvironment": false
+  "python.terminal.activateEnvironment": false,
   "testing.showAllMessages": true,
   "trunk.numJobs": 1,
 }
